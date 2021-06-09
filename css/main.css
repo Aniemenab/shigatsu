@@ -1,0 +1,703 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.comot {
+    clear: both;
+}
+
+::-webkit-scrollbar {
+    width: 12px !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(22, 33, 49);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(40, 54, 78);
+}
+
+
+/*=============================================
+=            sideBar            =
+=============================================*/
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed!important;
+    z-index: 1;
+    overflow: auto;
+    position: relative;
+    margin-top: -5px;
+}
+
+.sidebar i {
+    position: absolute;
+    top: 2;
+    right: 25px;
+    font-size: 26px;
+    margin-left: 50px;
+    color: white;
+    margin-top: 10px;
+}
+
+.sidebar i:hover {
+    color: rebeccapurple;
+}
+
+.sidebar a {
+    font-size: 1.1rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 1rem;
+}
+
+.sidebar a:nth-child(2) {
+    margin-top: 3rem;
+}
+
+.bar-block {
+    width: 100%;
+    transition: .3s ease-in !important;
+}
+
+.bar-block .bar-item {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0;
+    color: white;
+}
+
+.bar-item:hover {
+    padding-left: 10px;
+    transition: .3s ease-in;
+    color: darkslateblue;
+}
+
+.form-control {
+    width: 210px;
+}
+
+
+/*=====  End of sideBar  ======*/
+
+
+/*=====  End of Navbar  ======*/
+
+.film-wrapper {
+    width: 100%;
+    height: auto;
+    margin-top: 6rem;
+}
+
+.main-film-wrapper {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.film-wrapper .film-cover {
+    width: 92%;
+    height: auto;
+    margin: auto;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.tags {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tag {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.film-wrapper .film {
+    width: 429px;
+    height: 740px;
+    display: inline-block;
+    color: black;
+    position: relative;
+}
+
+.film>div {
+    margin-top: 1rem;
+}
+
+.film h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-decoration: underline;
+    border-left: 3px solid darkslateblue;
+    padding-left: .7rem;
+}
+
+.ic {
+    opacity: .5;
+    color: black;
+}
+
+.film-wrapper img {
+    width: 429px;
+}
+
+.film-btn {
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 15px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    text-align: center;
+    font-size: .9rem;
+    padding-top: .2rem;
+    overflow: hidden;
+}
+
+.film-btn:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: -webkit-linear-gradient(right, rgb(36, 52, 82), rgb(36, 19, 19));
+    height: 30px;
+    width: 100px;
+    z-index: -1;
+    transform-origin: top right;
+    transform: rotate(90deg);
+    transition: transform .7s;
+}
+
+.film-btn:hover {
+    color: white;
+    transition-duration: .7s;
+}
+
+.film-btn:hover:before {
+    transform: rotate(0deg);
+    color: white;
+}
+
+aside.extra {
+    width: 370px;
+    height: auto;
+    margin: auto;
+    margin-top: 10rem;
+}
+
+aside.extra .first {
+    width: 370px;
+    height: 420px;
+    margin-top: 2rem;
+}
+
+.first h4 {
+    text-align: right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    border-right: 2px solid darkslateblue;
+    padding-right: 1rem;
+    margin-top: 1rem;
+}
+
+.first video {
+    width: 370px;
+    height: 300px;
+    margin-top: 1rem;
+}
+
+.first img {
+    width: 370px;
+    background-size: cover;
+    height: 380px;
+}
+
+.music-body {
+    width: 370px;
+    height: 720px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.music img {
+    width: 370px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.music-body .list-music {
+    width: 370px;
+    height: 200px;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.list-mus {
+    padding-top: 1rem;
+    height: 60px;
+    cursor: pointer;
+}
+
+.list-mus i {
+    font-size: .9rem;
+    opacity: 0.5;
+    color: rgb(36, 52, 82);
+}
+
+.list-mus:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    text-align: center;
+    color: darkslateblue;
+    transition: .3s ease-out;
+}
+
+.pages {
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+
+.pages i {
+    font-size: 1.6rem;
+    margin-top: .3rem;
+    margin-left: 1rem;
+}
+
+.links {
+    width: 35px;
+    height: 35px;
+    background-color: rgb(26, 36, 53);
+    border-radius: 10px;
+    text-align: center;
+    padding-top: .2rem;
+    color: white;
+    margin-left: 1rem;
+}
+
+.links.active {
+    background-color: darkslateblue;
+    box-shadow: 3px 0px 7px 1px rgba(0, 0, 0, 0.5);
+}
+
+.pages .txt {
+    margin-left: 4rem;
+    font-size: .9rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/*=====  Section comment block  ======*/
+
+footer {
+    width: 100%;
+    height: auto;
+    background: rgb(11, 17, 26);
+    padding-top: 2rem;
+    margin-top: 3rem;
+}
+
+footer .follow {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: white;
+}
+
+footer .follow i {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    color: rgb(75, 89, 114);
+    padding: 0 .4rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin-left: 10px;
+    margin-top: 1rem;
+    background-color: white;
+    text-align: center;
+    padding-top: .7rem;
+}
+
+footer .follow i:hover {
+    background-color: rgb(75, 89, 114);
+    color: white;
+}
+
+.footer-main {
+    width: 100%;
+    height: auto;
+    background: rgb(9, 12, 17);
+}
+
+footer .footer-link {
+    width: 78%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+footer .footer-links {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    margin: auto;
+}
+
+.footer-link a {
+    color: white;
+}
+
+footer .footer-link a:hover {
+    transition: all 0.3s ease-out 0s;
+    color: rgb(75, 89, 114);
+}
+
+footer .right {
+    justify-content: center;
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    margin-top: 2rem;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-top: 1px solid;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .right a {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width:992px) {
+    .sidebar {
+        width: 0%;
+        display: none !important;
+        transition: ease-in 0.5s !important;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .film {
+        width: 329px !important;
+        height: 630px !important;
+    }
+    .film-wrapper img {
+        width: 329px;
+    }
+    aside.extra {
+        width: 270px;
+        height: 720px !important;
+        margin: auto;
+        padding-top: 3rem;
+    }
+    aside.extra .first {
+        width: 270px;
+        height: 420px;
+        margin-top: 2rem;
+    }
+    .first h4 {
+        text-align: right;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        border-right: 2px solid darkslateblue;
+        padding-right: 1rem;
+        margin-top: 1rem;
+    }
+    .first video {
+        width: 290px;
+        height: 200px;
+        margin-top: 1rem;
+    }
+    .first {
+        width: 290px;
+        background-size: cover;
+        height: 380px;
+        margin-top: -7rem;
+        display: none;
+    }
+    .music-body {
+        width: 290px;
+        height: 620px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+    }
+    .music img {
+        width: 290px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .music-body .list-music {
+        width: 290px;
+        height: 200px;
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .film-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .film-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .film-wrapper {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 840px) {
+    .main-film-wrapper {
+        grid-template-columns: 100%;
+    }
+    aside.extra {
+        margin-top: 0rem;
+        margin: 0;
+        margin-left: 2rem;
+        height: 999px;
+    }
+    .pages {
+        margin-top: 3.5rem;
+    }
+    footer {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 578px) {
+    footer .right h4 {
+        font-size: 1rem;
+    }
+    footer a {
+        color: white;
+    }
+    .right {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .film-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .txt {
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .film-wrapper .film-cover {
+        width: 99%;
+    }
+    .film {
+        width: 327px !important;
+        height: 520px !important;
+    }
+    .tag {
+        width: 270px;
+    }
+    .film-wrapper img {
+        width: 239px;
+    }
+    aside.extra {
+        width: 270px;
+        margin: 0;
+    }
+    .music img {
+        width: 290px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .music-body {
+        width: 290px;
+        height: 620px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .film {
+        height: 480px !important;
+    }
+    .film h4 {
+        font-size: 1.1rem;
+    }
+    .film p {
+        width: 280px;
+        font-size: .8rem;
+        text-align: start;
+    }
+    .music-body {
+        width: 290px;
+        height: 620px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        margin-top: 2rem;
+    }
+    .music img {
+        width: 290px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .music-body .list-music {
+        width: 290px;
+        height: 200px;
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+    .list-mus {
+        padding-top: 1rem;
+        height: 60px;
+        cursor: pointer;
+    }
+    .list-mus i {
+        font-size: .9rem;
+        opacity: 0.5;
+        color: rgb(36, 52, 82);
+    }
+    .list-mus:hover {
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+        background-color: white;
+        text-align: center;
+        color: darkslateblue;
+        transition: .3s ease-out;
+    }
+    footer {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:325px) {
+    .music-body {
+        width: 270px;
+        height: 620px;
+    }
+    .music img {
+        width: 270px;
+    }
+}
+
+@media screen and (max-width:280px) {
+    .film-wrapper .film-cover {
+        width: 100%;
+        margin: 0%;
+    }
+    .tag {
+        width: 240px;
+        font-size: .9rem;
+    }
+    .film {
+        width: 227px !important;
+        height: 520px !important;
+        margin-left: -1rem;
+    }
+    .film p {
+        width: 240px;
+        font-size: .8rem;
+        text-align: start;
+    }
+    aside.extra {
+        width: 230px;
+        margin: -1rem;
+    }
+    aside.extra .first {
+        width: 230px;
+        height: 420px;
+        margin-top: 2rem;
+    }
+    .first h4 {
+        text-align: right;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        border-right: 2px solid darkslateblue;
+        padding-right: 1rem;
+        margin-top: 1rem;
+    }
+    .first video {
+        width: 250px;
+        height: 200px;
+        margin-top: 1rem;
+    }
+    .music-body {
+        width: 230px;
+        height: 620px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        margin-top: 2rem;
+    }
+    .music img {
+        width: 230px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .music-body .list-music {
+        width: 290px;
+        height: 200px;
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+    .pages i {
+        font-size: 1.3rem;
+        margin-top: .3rem;
+    }
+    .links {
+        width: 29px;
+        height: 29px;
+        border-radius: 10px;
+        padding-top: .2rem;
+        margin-left: .7rem;
+    }
+}

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----bootstraps-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-----AnimateCss-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>Shigatsu</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/navbar2.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+
+    <div class="sidebar bar-block" style="display:none;background: url(./img/download111.webp); " id="mySidebar">
+        <i class="fas fa-arrow-alt-circle-left" onclick="w3_close()"></i>
+        <a href="./index.html" class="bar-item w3-button">Home</a>
+        <a href="./main.html" class="bar-item w3-button">Movies</a>
+        <a href="./cartoon.html" class="bar-item w3-button">Cartoon</a>
+        <a href="./tv-series.html" class="bar-item w3-button">Tv Series</a>
+        <a href="./anime.html" class="bar-item w3-button">Anime</a>
+        <a href="./about.html" class="bar-item w3-button">About Us</a>
+        <input class="form-control" type="search" placeholder="Search...." aria-label="Search">
+    </div>
+    <div id="main">
+
+
+        <div class="container-fluid">
+            <header class="header navbar-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <nav class="navbar navbar-expand-lg">
+
+                                <a class="navbar-brand" href="index.html">
+                                    <h3 class=" animate__animated animate__rubberBand">SHIGATSU</h3>
+                                </a>
+
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" onclick="w3_open()" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="toggler-icon"></span>
+                                            <span class="toggler-icon"></span>
+                                            <span class="toggler-icon"></span>
+                                        </button>
+
+                                <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                    <ul id="nav" class="navbar-nav ml-auto">
+                                        <li class="nav-item">
+                                            <a class="page-scroll" href="./index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="page-scroll  active" href="./main.html">Movies</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="page-scroll" href="./cartoon.html">Cartoon</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="page-scroll" href="./tv-series.html">Tv Series</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="page-scroll" href="./anime.html">Anime</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="page-scroll" href="./about.html">About Us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <input class="form-control " type="search" placeholder="Search...." aria-label="Search">
+
+                                        </li>
+                                    </ul>
+                                    <form class="d-flex">
+
+                                    </form>
+                                </div>
+                                <!-- navbar collapse -->
+                            </nav>
+                            <!-- navbar -->
+                        </div>
+                    </div>
+                    <!-- row -->
+                </div>
+                <!-- container -->
+
+            </header>
+        </div>
+
+
+        <!---------================================= = moviesList = =====================================-------->
+
+        <div class="film-wrapper">
+
+            <div class="main-film-wrapper">
+
+                <div class="film-cover">
+                    <div class="film">
+                        <a href="">
+                            <h4 data-aos="flip-down">Yakusoku No Neverland</h4>
+                        </a>
+                        <div class="tags">
+
+                            <a href="./anime.html">
+                                <div class="ic"><i class="fas fa-folder"></i> Anime</div>
+                            </a>
+
+                        </div>
+
+
+                        <div>
+                            <img src="./img/anime/yaku.jpg" alt="">
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet consectetur peeligendi vero quaerat architecto inventore eaque sapiente quas dolor ducimus, hic velit.</p>
+                        <a href="">
+
+                            <div class="film-btn">Read_More </div>
+                        </a>
+
+                    </div>
+                    <div class="film">
+                        <a href="">
+                            <h4 data-aos="flip-down">Spirited Away</h4>
+                        </a>
+                        <div class="tags">
+                            <a href="./cartoon.html">
+                                <div class="ic"><i class="fas fa-folder"></i> Anime</div>
+                            </a>
+
+                        </div>
+
+                        <div>
+                            <img src="./img/anime/spirit.jpg" alt="">
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet consectetur peeligendi vero quaerat architecto inventore eaque sapiente quas dolor ducimus, hic velit.</p>
+                        <a href="">
+                            <div class="film-btn">Read_More </div>
+                        </a>
+                    </div>
+
+                    <div class="film">
+                        <a href="">
+                            <h4 data-aos="flip-down">Home</h4>
+                        </a>
+                        <div class="tags">
+
+                            <a href="./main.html">
+                                <div class="ic"><i class="fas fa-folder"></i> Movies</div>
+                            </a>
+                            <a href="./cartoon.html">
+                                <div class="ic"><i class="fas fa-folder"></i> Cartoon</div>
+                            </a>
+
+                        </div>
+                        <div>
+                            <img src="./img/cartoon/home.jpg" alt="">
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet consectetur peeligendi vero quaerat architecto inventore eaque sapiente quas dolor ducimus, hic velit.</p>
+                        <a href="">
+                            <div class="film-btn">Read_More </div>
+                        </a>
+                    </div>
+
+                    <div class="film">
+                        <a href="">
+                            <h4 data-aos="flip-down">F is For Family 1</h4>
+                        </a>
+                        <div class="tags">
+                            <a href="./cartoon.html">
+                                <div class="ic"><i class="fas fa-folder"></i> Cartoon</div>
+                            </a>
+                            <a href="./tv-series.html">
+                                <div class="ic"><i class="fas fa-folder"></i> Tv Series</div>
+                            </a>
+                        </div>
+                        <div>
+                            <img src="./img/cartoon/series/f-for.jpg" alt="">
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet consectetur peeligendi vero quaerat architecto inventore eaque sapiente quas dolor ducimus, hic velit.</p>
+                        <a href="">
+                            <div class="film-btn">Read_More </div>
+                        </a>
+                    </div>
+                    <div class="film">
+                        <a href="">
+                            <h4 data-aos="flip-down">Horrible Bosses 2</h4>
+                        </a>
+                        <div class="tags">
+                            <a href="./main.html">
+                                <div class="ic"><i class="fas fa-folder"></i> Movie</div>
+                            </a>
+
+                        </div>
+                        <div>
+                            <img src="./img/movies/hor2.jpg" alt="">
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet consectetur peeligendi vero quaerat architecto inventore eaque sapiente quas dolor ducimus, hic velit.</p>
+                        <a href="">
+                            <div class="film-btn">Read_More </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <aside class="extra">
+                    <div class="side">
+                        <div class="first">
+                            <h3 data-aos="flip-down">Popular</h3>
+                            <video class="video-item" height="417" width="299" poster="https://assets.awwwards.com/awards/external/2017/02/singmovie-circular-draggable-menu_static.jpeg" autoplay="" loop="" muted="" playsinline="">
+                                <source src="https://assets.awwwards.com/awards/external/2017/02/singmovie-circular-draggable-menu.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="first">
+                            <img src="./img/movies/TheHustle_PosterArt.jpg" alt="">
+                            <h4>Hustler</h4>
+                        </div>
+
+                        <div class="music-body">
+                            <audio style="height: 300px;width: 300px;" src="./img/music/11 Save Your Tears - (SongsLover.com).mp3">rrrrrrrr</audio>
+
+                            <div class="music">
+                                <img src="./music/AlbumArtSmall.jpg" alt="">
+                            </div>
+                            <div class="list-music">
+                                <div class="list-mus"><i class="fas fa-music"></i> Natural</div>
+                                <div class="list-mus"><i class="fas fa-music"></i> Cool Out</div>
+                                <div class="list-mus"><i class="fas fa-music"></i> Boomerang</div>
+                                <div class="list-mus"><i class="fas fa-music"></i> Bad Liar</div>
+                                <div class="list-mus"><i class="fas fa-music"></i> Love</div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+
+            <div class="pages justify-content-center">
+                <a href="./five.html"><i class="fas fa-arrow-alt-circle-left"></i></a>
+                <a href="./secondpage.html">
+                    <div class="links">2</div>
+                </a>
+                <a href="./third.html">
+                    <div class="links">3</div>
+                </a>
+                <a href="./four.html">
+                    <div class="links ">4</div>
+                </a>
+                <a href="./five.html">
+                    <div class="links">5</div>
+                </a>
+                <a href="./six.html">
+                    <div class="links active">6</div>
+                </a>
+
+                <a href="./seven.html">
+                    <i class="fas fa-arrow-alt-circle-right"></i>
+                </a>
+
+                <div class="txt">
+                    page 6 of 7
+                </div>
+
+            </div>
+        </div>
+        <footer>
+            <div class="follow" data-aos-delay="200">
+                <h2>Follow-us</h2>
+                <i class="fab fa-facebook" data-aos="fade-right"></i>
+                <i class="fab fa-twitter" data-aos="fade-right"></i>
+                <i class="fab fa-instagram" data-aos="fade"></i>
+                <i class="fab fa-reddit" data-aos="fade-left"></i>
+                <i class="fab fa-youtube" data-aos="fade-left"></i>
+
+            </div>
+            <div class="footer-main">
+                <div class="footer-link">
+                    <div class="footer-links">
+                        <a href="./index.html">Home</a>
+                    </div>
+                    <div class="footer-links">
+                        <a href="./main.html">Movies</a>
+                    </div>
+                    <div class="footer-links">
+                        <a href="./anime.html">Anime</a>
+                    </div>
+                    <div class="footer-links">
+                        <a href="./tv-series.html">Tv Series</a>
+                    </div>
+                    <div class="footer-links">
+                        <a href="./cartoon.html">Cartoon</a>
+                    </div>
+                    <div class="footer-links">
+                        <a href="./about.html">About Us</a>
+                    </div>
+                </div>
+                <div class="right  ">
+
+                    <div> Copyright @2021 All right reserved |</div>
+                    <div>
+                        <a href="mailto:iiam.bellu@gmail.com " target="_black "><i class="fab fa-mailchimp"></i> made by Belu</a>
+                    </div>
+
+
+
+                </div>
+                <div style="height: 20px;"></div>
+            </div>
+        </footer>
+    </div>
+
+    <!-------- End of moviesList ====----->
+
+
+    </div>
+
+
+
+    </div>
+</body>
+<script src="./js/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./js/nav.js"></script>
+<script type="text/javascript">
+    AOS.init({
+        offset: 200,
+        duration: 1000,
+    });
+</script>
+
+</html>
